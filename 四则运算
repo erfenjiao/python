@@ -1,0 +1,12 @@
+a=int(input())
+b=input()
+c=int(input())
+d={'+':a+c,'-':a-c,'*':a*c,'/':"a/c"}
+for i in d.keys():
+    if i==b and b=='/':
+        if c==0:
+            print("divided by zero")
+        else:
+            print("{:.2f}".format(eval(d[i])))
+    elif i==b:
+        print("{:.2f}".format(d[i]))
